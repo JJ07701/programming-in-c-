@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    for(int i=1;i<=5;i++)
+    {
+        for(int j=1;j<=(5-i);j++)
+        {
+            printf(" ");
+        }
+        for(int k=1;k<=i;k++)
+        {   if(k==1||k==i||i==5)
+            printf(" *");
+            else 
+            printf("  ");
+        }
+        printf("\n");
+    }
+    
+return 0;
+}
+
+     *
+    * *
+   *   *
+  *     *
+ * * * * *
+
+
+
